@@ -73,11 +73,11 @@ class LogisticRegressor:
         - self.bias: The bias of the model after training.
         """
         # TODO: Obtain m (number of examples) and n (number of features)
-        m = None
-        n = None
+        m = X.shape[0]
+        n = X.shape[1]
 
         # TODO: Initialize all parameters to 0
-        self.weights = None
+        self.weights = [0 for _ in range(n)]
         self.bias = 0
 
         # TODO: Complete the gradient descent code
